@@ -313,6 +313,10 @@
         UI.renderDetail(current.params.get('id'));
       }
     });
+
+    // Trigger initial route
+    const { path } = Router.parseHash();
+    Router.navigate(path);
   }
 
   document.addEventListener('DOMContentLoaded', bootstrap);

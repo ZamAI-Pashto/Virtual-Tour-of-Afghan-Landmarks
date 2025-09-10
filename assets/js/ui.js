@@ -419,6 +419,7 @@
     el.innerHTML = `
       <h2 class="title">${landmarkTitle(l, locale)}</h2>
       <div class="city">${landmarkCity(l, locale)}</div>
+      <img src="${l.image}" alt="${landmarkTitle(l, locale)}" style="max-width:100%; border-radius:10px; margin: 0.5rem 0;"/>
       <p class="desc">${landmarkDesc(l, locale)}</p>
       <div class="actions">
         <button class="btn primary" id="btn-focus-map" data-i18n="action.focusOnMap">Focus on map</button>
@@ -429,6 +430,8 @@
     I18N.apply();
     // Focus map on this landmark
     Map.focus(l);
+    const btn = el.querySelector('#btn-focus-map');
+    if (btn) btn.addEventListener('click', () => Map.focus(l));
   }
 
   function clearDetail() {
