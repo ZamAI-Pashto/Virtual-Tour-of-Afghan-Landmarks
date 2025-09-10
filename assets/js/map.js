@@ -203,15 +203,21 @@
   function fitAllLandmarks() {
     if (!map || !markersLayer) return;
 
-    const group = new L.featureGroup();
-    markersLayer.eachLayer(marker => {
-      group.addLayer(marker);
-    });
-
-    if (group.getLayers().length > 0) {
-      map.fitBounds(group.getBounds(), {
-        padding: [20, 20]
+    try {
+      const group = new L.featureGroup();
+      markersLayer.eachLayer(marker => {
+        group.addLayer(marker);
       });
+
+      if (group.getLayers().length > 0) {
+        map.fitBounds(group.getBounds(), {
+          padding: [20, 20]
+        });
+      }
+    } catch (error) {
+      console.warn('Map fitBounds not available, using fallback');
+      // Fallback to center of Afghanistan
+      map.setView([34.5553, 69.2075], 6);
     }
   }
 
