@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // UI interaction logic
 (function () {
   let currentLandmarks = [];
@@ -370,3 +371,81 @@
     loadLandmarks
   };
 })();
+=======
+(function () {
+  const listEl = () => document.getElementById('landmark-list');
+  const detailEl = () => document.getElementById('detail-view');
+
+  function landmarkTitle(l, locale) {
+    return l.title?.[locale] || l.title?.en || '';
+  }
+  function landmarkCity(l, locale) {
+    return l.city?.[locale] || l.city?.en || '';
+  }
+  function landmarkDesc(l, locale) {
+    return l.description?.[locale] || l.description?.en || '';
+  }
+
+  function renderList(landmarks) {
+    const ul = listEl();
+    if (!ul) return;
+    const locale = I18N.locale;
+    ul.innerHTML = '';
+    for (const l of landmarks) {
+      const li = document.createElement('li');
+      li.className = 'landmark-item';
+      li.tabIndex = 0;
+      li.setAttribute('role', 'button');
+      li.setAttribute('aria-label', landmarkTitle(l, locale));
+      li.innerHTML = `
+        <img src="${l.image}" alt="${landmarkTitle(l, locale)}" />
+        <div class="meta">
+          <span class="title">${landmarkTitle(l, locale)}</span>
+          <span class="city">${landmarkCity(l, locale)}</span>
+        </div>
+      `;
+      li.addEventListener('click', () => Router.navigate(`/landmark?id=${l.id}`));
+      li.addEventListener('keydown', (e) => { if (e.key === 'Enter') Router.navigate(`/landmark?id=${l.id}`); });
+      ul.appendChild(li);
+    }
+  }
+
+  function renderDetail(id) {
+    const l = Data.getById(id);
+    const el = detailEl();
+    if (!l || !el) return;
+    const locale = I18N.locale;
+    el.classList.remove('hidden');
+    el.innerHTML = `
+      <h2 class="title">${landmarkTitle(l, locale)}</h2>
+      <div class="city">${landmarkCity(l, locale)}</div>
+      <p class="desc">${landmarkDesc(l, locale)}</p>
+      <div class="actions">
+        <button class="btn primary" id="btn-focus-map" data-i18n="action.focusOnMap">Focus on map</button>
+        <a class="btn" href="#/" data-i18n="action.back">Back</a>
+      </div>
+    `;
+    // Re-apply i18n for the new DOM without refetching
+    I18N.apply();
+    // Focus map on this landmark
+    Map.focus(l);
+  }
+
+  function clearDetail() {
+    const el = detailEl();
+    if (el) el.classList.add('hidden');
+  }
+
+  function wireSearch() {
+    const input = document.getElementById('search');
+    if (!input) return;
+    input.addEventListener('input', () => {
+      const results = Data.search(input.value, I18N.locale);
+      renderList(results);
+      Map.renderMarkers(results);
+    });
+  }
+
+  window.UI = { renderList, renderDetail, clearDetail, wireSearch };
+})();
+>>>>>>> 55c521f (Add README and implement core functionality for multilingual virtual tour app)

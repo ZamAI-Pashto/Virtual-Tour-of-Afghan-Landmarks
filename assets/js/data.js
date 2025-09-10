@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Landmark data for Virtual Tour of Afghan Landmarks
 (function () {
   const landmarks = [
@@ -190,3 +191,42 @@
     }
   };
 })();
+=======
+(function () {
+  const DATA_URL = './data/landmarks.json';
+
+  const state = {
+    landmarks: [],
+    index: new Map(), // id -> record
+  };
+
+  async function load() {
+    if (state.landmarks.length) return state.landmarks;
+    const res = await fetch(DATA_URL);
+    if (!res.ok) throw new Error('Failed to load landmarks');
+    const json = await res.json();
+    state.landmarks = json;
+    state.index = new Map(json.map((x) => [x.id, x]));
+    return json;
+  }
+
+  function all() { return state.landmarks; }
+  function getById(id) { return state.index.get(id); }
+  function search(query, locale = 'en') {
+    const q = (query || '').trim().toLowerCase();
+    if (!q) return state.landmarks;
+    return state.landmarks.filter((l) => {
+      const title = l.title?.[locale] || l.title?.en || '';
+      const city = l.city?.[locale] || l.city?.en || '';
+      const desc = l.description?.[locale] || l.description?.en || '';
+      return (
+        title.toLowerCase().includes(q) ||
+        city.toLowerCase().includes(q) ||
+        desc.toLowerCase().includes(q)
+      );
+    });
+  }
+
+  window.Data = { load, all, getById, search };
+})();
+>>>>>>> 55c521f (Add README and implement core functionality for multilingual virtual tour app)

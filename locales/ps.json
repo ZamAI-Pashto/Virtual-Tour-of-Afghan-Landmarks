@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "app_title": "د افغانستان تاریخي ځایونو مجازي سیاحت",
   "language": "ژبه",
   "search_landmarks": "د ځایونو لټون...",
@@ -29,3 +30,12 @@
   "facilities": "اسانتیاوې",
   "nearby": "نږدې ځایونه"
 }
+=======
+  "app.title": "د افغانستان د تاریخي ځایونو مجازي سفر",
+  "label.language": "ژبه",
+  "search.placeholder": "ځایونه ولټوئ...",
+  "footer.text": "معلومات د زده کړې لپاره. نقشه © د OpenStreetMap ګډونوال.",
+  "action.focusOnMap": "په نقشې تمرکز",
+  "action.back": "بېرته"
+}
+>>>>>>> 55c521f (Add README and implement core functionality for multilingual virtual tour app)

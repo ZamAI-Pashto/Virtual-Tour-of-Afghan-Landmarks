@@ -1,0 +1,158 @@
+[
+  {
+    "id": "blue-mosque",
+    "title": {"en": "Blue Mosque", "fa": "مسجد کبود (روضه شریف)", "ps": "شین جومات (روضه شریف)"},
+    "city": {"en": "Mazar-i-Sharif", "fa": "مزار شریف", "ps": "مزار شریف"},
+    "description": {
+      "en": "The Shrine of Hazrat Ali, known as the Blue Mosque, is a stunning example of Timurid architecture with intricate blue tilework.",
+      "fa": "روضه مبارک حضرت علی (ع) که به مسجد کبود مشهور است، نمونه‌ای شگفت‌انگیز از معماری تیموری با کاشی‌کاری‌های آبی است.",
+      "ps": "د حضرت علي (رض) روضه چې شین جومات په نوم هم یادیږي، د تیموریانو ښکلی معمارۍ او نیلي کاشی کارۍ لري."
+    },
+    "location": {"lat": 36.709, "lng": 67.1109},
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Blue_Mosque_in_Mazar-i-Sharif.jpg/320px-Blue_Mosque_in_Mazar-i-Sharif.jpg"
+  },
+  {
+    "id": "band-e-amir",
+    "title": {"en": "Band-e Amir National Park", "fa": "پارک ملی بند امیر", "ps": "بند امیر ملي پارک"},
+    "city": {"en": "Bamyan", "fa": "بامیان", "ps": "بامیان"},
+    "description": {
+      "en": "A series of six deep blue lakes separated by natural dams, Afghanistan's first national park.",
+      "fa": "مجموعه‌ای از شش دریاچه آبی عمیق که توسط بندهای طبیعی جدا شده‌اند؛ نخستین پارک ملی افغانستان.",
+      "ps": "د شپږو ژورو شینو جهيلونو مجموعه چې د طبیعي بندونو له لارې جلا شوي؛ د افغانستان لومړنی ملي پارک."
+    },
+    "location": {"lat": 34.8384, "lng": 67.2252},
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Band-e_Amir_lakes.jpg/320px-Band-e_Amir_lakes.jpg"
+  },
+  {
+    "id": "minaret-of-jam",
+    "title": {"en": "Minaret of Jam", "fa": "منار جام", "ps": "د جام منار"},
+    "city": {"en": "Ghor", "fa": "غور", "ps": "غور"},
+    "description": {
+      "en": "A UNESCO World Heritage Site, this 12th-century minaret is celebrated for its intricate brickwork and Kufic inscriptions.",
+      "fa": "این مناره از قرن دوازدهم میلادی و با آجرچینی‌های پیچیده و کتیبه‌های کوفی شناخته می‌شود و در فهرست میراث جهانی یونسکو ثبت است.",
+      "ps": "د دولسمې پېړۍ دا منار د ظریفو خښتو کار او کوفي لیکنو لپاره مشهور دی او د یونسکو میراث دی."
+    },
+    "location": {"lat": 34.3961, "lng": 64.5162},
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Jam_Minaret.jpg/320px-Jam_Minaret.jpg"
+  },
+  {
+    "id": "buddhas-of-bamyan",
+    "title": {"en": "Buddhas of Bamyan (Niches)", "fa": "بوداهای بامیان (طاقچه‌ها)", "ps": "د بامیان بوداګان (کوټې)"},
+    "city": {"en": "Bamyan", "fa": "بامیان", "ps": "بامیان"},
+    "description": {
+      "en": "The niches that once housed monumental Buddha statues, set in the breathtaking cliffs of Bamyan Valley.",
+      "fa": "طاقچه‌هایی که زمانی مجسمه‌های عظیم بودا در آن قرار داشتند، در صخره‌های شگفت‌انگیز دره بامیان.",
+      "ps": "هغه کوټې چې پخوا په کې د بودا لوی مجسمې ولاړې وې، د بامیان د درې په ښکلو چټو کې."
+    },
+    "location": {"lat": 34.8466, "lng": 67.8252},
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Bamiyan_cliff.jpg/320px-Bamiyan_cliff.jpg"
+  },
+  {
+    "id": "qaleh-bost",
+    "title": {"en": "Qal'eh-ye Bost Arch", "fa": "طاق قلعه بست", "ps": "د بست کلا طاق"},
+    "city": {"en": "Lashkargah, Helmand", "fa": "لشکرگاه، هلمند", "ps": "لشکرګاه، هلمند"},
+    "description": {
+      "en": "An iconic brick arch from the Ghaznavid era, a symbol of Helmand's heritage.",
+      "fa": "طاق آجری شاخص از دوران غزنویان و نمادی از میراث فرهنگی هلمند است.",
+      "ps": "د غزنوي دورې مشهور د خښتو طاق چې د هلمند د کلتوري میراث نښه ده."
+    },
+    "location": {"lat": 31.514, "lng": 64.368},
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Bost_Arch.jpg/320px-Bost_Arch.jpg"
+  },
+  {
+    "id": "herat-citadel",
+    "title": {"en": "Herat Citadel (Qala Ikhtyaruddin)", "fa": "قلعه اختیارالدین هرات", "ps": "د هرات کلا (اختیاردین)"},
+    "city": {"en": "Herat", "fa": "هرات", "ps": "هرات"},
+    "description": {
+      "en": "A historic fortress with origins dating back to Alexander the Great, extensively restored.",
+      "fa": "قلعه تاریخی با پیشینه‌ای که به زمان اسکندر مقدونی می‌رسد و به‌طور گسترده بازسازی شده است.",
+      "ps": "تاریخي کلا چې تاریخ یې د سکندر اعظم وخت ته رسېږي او پراخه بیارغونه شوې."
+    },
+    "location": {"lat": 34.3419, "lng": 62.2031},
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Herat_Citadel.jpg/320px-Herat_Citadel.jpg"
+  },
+  {
+    "id": "gardens-babur",
+    "title": {"en": "Gardens of Babur", "fa": "باغ‌های بابر", "ps": "د بابر باغونه"},
+    "city": {"en": "Kabul", "fa": "کابل", "ps": "کابل"},
+    "description": {
+      "en": "Terraced gardens and the tomb of Mughal emperor Babur, a serene historic site in Kabul.",
+      "fa": "باغ‌های طبقاتی و آرامگاه بابر، پادشاه مغول، مکانی تاریخی و آرام در کابل.",
+      "ps": "طبقو باغونه او د مغل پاچا بابر مقبره، په کابل کې یو ارام تاریخي ځای."
+    },
+    "location": {"lat": 34.4929, "lng": 69.1382},
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Babur_Gardens_Kabul.jpg/320px-Babur_Gardens_Kabul.jpg"
+  },
+  {
+    "id": "citadel-ghazni",
+    "title": {"en": "Ghazni Citadel (Bastion)", "fa": "قلعه غزنی", "ps": "د غزني کلا"},
+    "city": {"en": "Ghazni", "fa": "غزنی", "ps": "غزني"},
+    "description": {
+      "en": "Remnants of the historic fortress walls and towers overlooking the city of Ghazni.",
+      "fa": "بازمانده‌های دیوارها و برج‌های قلعه تاریخی که بر شهر غزنی مشرف است.",
+      "ps": "د تاریخي کلا دیوالونه او برجونه چې د غزني ښار ته مشرف دي."
+    },
+    "location": {"lat": 33.548, "lng": 68.419},
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Ghazni_Fortress.jpg/320px-Ghazni_Fortress.jpg"
+  },
+  {
+    "id": "khwaja-parsa",
+    "title": {"en": "Khwaja Parsa Mosque", "fa": "مسجد خواجه پارسا", "ps": "د خواجه پارسا جومات"},
+    "city": {"en": "Balkh", "fa": "بلخ", "ps": "بلخ"},
+    "description": {
+      "en": "A Timurid-era mosque in the ancient city of Balkh with characteristic tilework.",
+      "fa": "مسجدی از دوره تیموری در شهر باستانی بلخ با کاشی‌کاری‌های شاخص.",
+      "ps": "د تیموریانو دورې جومات په لرغوني بلخ کې د ځانګړو کاشی کاریو سره."
+    },
+    "location": {"lat": 36.7563, "lng": 66.8972},
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Khaja_Parsa_Mosque.jpg/320px-Khaja_Parsa_Mosque.jpg"
+  },
+  {
+    "id": "qandahar-shrine",
+    "title": {"en": "Shrine of the Cloak (Kandahar)", "fa": "روضه شریف پیراهن (قندهار)", "ps": "د پیغمبر کرته روضه (کندهار)"},
+    "city": {"en": "Kandahar", "fa": "قندهار", "ps": "کندهار"},
+    "description": {
+      "en": "A revered shrine believed to house the cloak of Prophet Muhammad, central to Kandahar's spiritual life.",
+      "fa": "زیارتگاهی که گفته می‌شود پیراهن پیامبر اسلام در آن نگهداری می‌شود و در قلب زندگی معنوی قندهار قرار دارد.",
+      "ps": "مشهور زیارت چې د پیغمبر (ص) کرته پکې ساتل کېږي او د کندهار د روحاني ژوند مرکز دی."
+    },
+    "location": {"lat": 31.6176, "lng": 65.7165},
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Kandahar_Shrine_of_the_Cloak.jpg/320px-Kandahar_Shrine_of_the_Cloak.jpg"
+  },
+  {
+    "id": "nooristan-valley",
+    "title": {"en": "Nuristan Valleys", "fa": "دره‌های نورستان", "ps": "د نورستان درې"},
+    "city": {"en": "Nuristan", "fa": "نورستان", "ps": "نورستان"},
+    "description": {
+      "en": "Remote valleys known for wooden architecture and distinct cultural heritage.",
+      "fa": "دره‌های دورافتاده با معماری چوبی و میراث فرهنگی متمایز.",
+      "ps": "لرې پرتې درې چې د لرګي معمارۍ او ځانګړي کلتوري میراث لپاره پېژندل کېږي."
+    },
+    "location": {"lat": 35.2802, "lng": 70.8006},
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Nuristan_landscape.jpg/320px-Nuristan_landscape.jpg"
+  },
+  {
+    "id": "kabul-citadel",
+    "title": {"en": "Kabul Bala Hissar Citadel", "fa": "قلعه بالاحصار کابل", "ps": "د کابل بالاحصار کلا"},
+    "city": {"en": "Kabul", "fa": "کابل", "ps": "کابل"},
+    "description": {
+      "en": "A historic fortress overlooking Kabul, with layers of history from various empires.",
+      "fa": "قلعه‌ای تاریخی مشرف بر کابل، با لایه‌هایی از تاریخ از امپراتوری‌های گوناگون.",
+      "ps": "تاریخي کلا چې پر کابل برلاسی ده او د بېلابېلو امپراتوریو تاریخ لري."
+    },
+    "location": {"lat": 34.502, "lng": 69.199},
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Balahisar_Kabul.jpg/320px-Balahisar_Kabul.jpg"
+  },
+  {
+    "id": "paghman-gardens",
+    "title": {"en": "Paghman Gardens and Arch", "fa": "باغ و طاق پغمان", "ps": "د پغمان باغ او طاق"},
+    "city": {"en": "Paghman, Kabul", "fa": "پغمان، کابل", "ps": "پغمان، کابل"},
+    "description": {
+      "en": "A scenic area near Kabul with gardens and a triumphal arch inspired by European styles.",
+      "fa": "منطقه‌ای دیدنی نزدیک کابل با باغ‌ها و طاق نصرت الهام گرفته از سبک‌های اروپایی.",
+      "ps": "نزدې سیمه له کابل سره چې باغونه او د اروپا له سبکونو الهام اخیستی طاق لري."
+    },
+    "location": {"lat": 34.589, "lng": 68.952},
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Paghman_Arch.jpg/320px-Paghman_Arch.jpg"
+  }
+]

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Main application entry point
 (function () {
   // Application state
@@ -277,3 +278,43 @@
 
   console.log('🚀 Virtual Tour of Afghan Landmarks - App module loaded');
 })();
+=======
+(function () {
+  async function bootstrap() {
+    await Data.load();
+    Map.init();
+    UI.wireSearch();
+
+    Router.add('/', () => {
+      UI.clearDetail();
+      const items = Data.all();
+      UI.renderList(items);
+      Map.renderMarkers(items);
+    });
+
+    Router.add('/landmark', ({ params }) => {
+      const id = params.get('id');
+      if (!id) return Router.navigate('/');
+      UI.renderDetail(id);
+    });
+
+    Router.add('/404', () => {
+      UI.clearDetail();
+    });
+
+    // Re-render list/markers on i18n changes
+    window.addEventListener('i18n:changed', () => {
+      const current = Router.parseHash();
+      if (current.path === '/') {
+        const items = Data.search(document.getElementById('search')?.value || '', I18N.locale);
+        UI.renderList(items);
+        Map.renderMarkers(items);
+      } else if (current.path === '/landmark') {
+        UI.renderDetail(current.params.get('id'));
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', bootstrap);
+})();
+>>>>>>> 55c521f (Add README and implement core functionality for multilingual virtual tour app)

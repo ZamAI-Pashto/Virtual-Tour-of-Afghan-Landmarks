@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🏛️ Virtual Tour of Afghan Landmarks
 
 A comprehensive virtual tour application showcasing Afghanistan's rich cultural heritage through an interactive web experience. Built with modern web technologies and featuring multilingual support for English, Persian (فارسی), and Pashto (پښتو).
@@ -198,3 +199,59 @@ This project is created for educational purposes. Map data © OpenStreetMap cont
 ---
 
 **Made with ❤️ to showcase Afghanistan's beautiful cultural heritage**
+=======
+# Virtual Tour of Afghan Landmarks
+
+An interactive, multilingual, static web app to explore Afghanistan’s landmarks on a map with details, imagery, and search.
+
+## Features
+- Leaflet map with markers and popups
+- Landmark list with search filter
+- Detail view with description and focus-on-map
+- i18n: English (en), Persian/Dari (fa), Pashto (ps), with RTL support
+- 100% static site, no build step required
+
+## Structure
+```
+index.html
+assets/
+	css/
+		styles.css
+	js/
+		app.js       # bootstrap & routes
+		data.js      # data loader/search
+		i18n.js      # localization
+		map.js       # Leaflet integration
+		router.js    # hash router
+		ui.js        # render list & detail
+data/
+	landmarks.json # dataset with multilingual fields
+locales/
+	en.json fa.json ps.json
+```
+
+## Data schema
+Each landmark:
+```
+{
+	id: string,
+	title: { en: string, fa?: string, ps?: string },
+	city: { en: string, fa?: string, ps?: string },
+	description: { en: string, fa?: string, ps?: string },
+	location: { lat: number, lng: number },
+	image: string (URL)
+}
+```
+
+## Run locally
+Use any static server. For a quick run:
+```bash
+python3 -m http.server 8000
+```
+Then open `http://localhost:8000/`.
+
+## Contributing
+- Add new landmarks to `data/landmarks.json` following the schema.
+- Add translations in `locales/*`. Keys are referenced via `data-i18n`.
+- Keep UI simple, accessible, and RTL-friendly.
+>>>>>>> 55c521f (Add README and implement core functionality for multilingual virtual tour app)

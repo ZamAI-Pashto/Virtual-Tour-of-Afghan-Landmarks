@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "app_title": "Virtual Tour of Afghan Landmarks",
   "language": "Language",
   "search_landmarks": "Search landmarks...",
@@ -29,3 +30,12 @@
   "facilities": "Facilities",
   "nearby": "Nearby Attractions"
 }
+=======
+  "app.title": "Virtual Tour of Afghan Landmarks",
+  "label.language": "Language",
+  "search.placeholder": "Search landmarks...",
+  "footer.text": "Data for educational purposes. Map © OpenStreetMap contributors.",
+  "action.focusOnMap": "Focus on map",
+  "action.back": "Back"
+}
+>>>>>>> 55c521f (Add README and implement core functionality for multilingual virtual tour app)

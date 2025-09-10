@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "app_title": "تور مجازی مکان‌های تاریخی افغانستان",
   "language": "زبان",
   "search_landmarks": "جستجوی مکان‌ها...",
@@ -29,3 +30,12 @@
   "facilities": "امکانات",
   "nearby": "جاذبه‌های نزدیک"
 }
+=======
+  "app.title": "گردش مجازی در بناهای تاریخی افغانستان",
+  "label.language": "زبان",
+  "search.placeholder": "جستجوی بناها...",
+  "footer.text": "اطلاعات برای اهداف آموزشی. نقشه © مشارکت‌کنندگان OpenStreetMap.",
+  "action.focusOnMap": "تمرکز روی نقشه",
+  "action.back": "بازگشت"
+}
+>>>>>>> 55c521f (Add README and implement core functionality for multilingual virtual tour app)

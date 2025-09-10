@@ -22,6 +22,8 @@
       localStorage.setItem('locale', locale);
       setDir(locale);
       applyTranslations();
+      // Notify listeners that locale changed
+      window.dispatchEvent(new CustomEvent('i18n:changed', { detail: { locale } }));
     } catch (e) {
       console.error('i18n load error:', e);
       if (locale !== DEFAULT_LOCALE) {
@@ -55,6 +57,7 @@
   window.I18N = {
     loadLocale,
     t,
+    apply: () => applyTranslations(),
     get locale() { return state.locale; },
     get isRTL() { return RTL_LOCALES.has(state.locale); },
   };

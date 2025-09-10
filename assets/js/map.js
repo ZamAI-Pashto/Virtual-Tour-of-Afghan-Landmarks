@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Map functionality using Leaflet
 (function () {
   let map = null;
@@ -239,3 +240,45 @@
     get instance() { return map; }
   };
 })();
+=======
+(function () {
+  let map;
+  let markersLayer;
+
+  function init() {
+    const el = document.getElementById('map');
+    if (!el) return;
+    map = L.map('map');
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap contributors',
+    }).addTo(map);
+    markersLayer = L.layerGroup().addTo(map);
+    map.setView([34.5260, 69.1777], 6); // Center roughly on Afghanistan
+    setTimeout(() => map.invalidateSize(), 0);
+  }
+
+  function renderMarkers(landmarks) {
+    if (!map || !markersLayer) return;
+    markersLayer.clearLayers();
+    const bounds = [];
+    for (const l of landmarks) {
+      const m = L.marker([l.location.lat, l.location.lng])
+        .addTo(markersLayer)
+        .bindPopup(`<b>${l.title?.[I18N.locale] || l.title?.en}</b><br/>${l.city?.[I18N.locale] || l.city?.en}`);
+      m.on('click', () => Router.navigate(`/landmark?id=${l.id}`));
+      bounds.push([l.location.lat, l.location.lng]);
+    }
+    if (bounds.length) {
+      map.fitBounds(bounds, { padding: [20, 20] });
+    }
+  }
+
+  function focus(landmark) {
+    if (!map) return;
+    map.setView([landmark.location.lat, landmark.location.lng], 14);
+  }
+
+  window.Map = { init, renderMarkers, focus };
+})();
+>>>>>>> 55c521f (Add README and implement core functionality for multilingual virtual tour app)
