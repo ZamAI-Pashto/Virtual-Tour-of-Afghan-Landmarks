@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Virtual Tour of Afghan Landmarks</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">🗺️</span>
+<<<<<<< HEAD
+        <h1 id="app-title" data-i18n="app_title">Virtual Tour of Afghan Landmarks</h1>
+      </div>
+      <div class="controls">
+        <label for="lang-select" id="label-language" data-i18n="language">Language</label>
+=======
+        <h1 id="app-title" data-i18n="app.title">Virtual Tour of Afghan Landmarks</h1>
+      </div>
+      <div class="controls">
+        <label for="lang-select" id="label-language" data-i18n="label.language">Language</label>
+>>>>>>> 55c521f (Add README and implement core functionality for multilingual virtual tour app)
+        <select id="lang-select" aria-label="Language selector">
+          <option value="en">English</option>
+          <option value="fa">فارسی</option>
+          <option value="ps">پښتو</option>
+        </select>
+<<<<<<< HEAD
+        <input id="search" type="search" placeholder="Search landmarks..." data-i18n-placeholder="search_landmarks" />
+=======
+        <input id="search" type="search" placeholder="Search landmarks..." data-i18n-placeholder="search.placeholder" />
+>>>>>>> 55c521f (Add README and implement core functionality for multilingual virtual tour app)
+      </div>
+    </header>
+
+    <main class="app-main">
+      <aside class="sidebar" id="sidebar">
+        <ul id="landmark-list" class="landmark-list" aria-live="polite"></ul>
+      </aside>
+      <section class="content">
+        <div id="map" class="map" role="region" aria-label="Map"></div>
+        <section id="detail-view" class="detail hidden" aria-live="polite"></section>
+      </section>
+    </main>
+    <footer class="app-footer">
+<<<<<<< HEAD
+      <span id="footer-text" data-i18n="footer_text">Data for educational purposes. Map © OpenStreetMap contributors.</span>
+=======
+      <span id="footer-text" data-i18n="footer.text">Data for educational purposes. Map © OpenStreetMap contributors.</span>
+>>>>>>> 55c521f (Add README and implement core functionality for multilingual virtual tour app)
+    </footer>
+
+    <script src="./assets/js/leaflet-mock.js"></script>
+    <script src="./assets/js/i18n.js"></script>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/router.js"></script>
+    <script src="./assets/js/ui.js"></script>
+    <script src="./assets/js/map.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+  </html>
