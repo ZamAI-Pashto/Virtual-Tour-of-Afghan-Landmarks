@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.cache/
+.vscode/
+.idea/
+.DS_Store
+__pycache__/
+*.py[cod]
+backs/
